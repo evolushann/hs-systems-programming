@@ -29,4 +29,8 @@ int main() {
             memcpy(mem, parent_message, sizeof(parent_message));
  	    }
     }
+
+    munmap(mem, MEM_SZ);
+
+    return 0;
 }
